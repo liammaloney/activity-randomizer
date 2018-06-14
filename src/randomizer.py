@@ -2,7 +2,7 @@ import random
 import csv
 
 import csv
-with open('data.csv', newline='') as csvfile:
+with open('../data/data.csv', newline='') as csvfile:
     reader = csv.reader(csvfile)
     for row in reader:
         rows=[r for r in reader]
