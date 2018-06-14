@@ -1,8 +1,11 @@
 import random
 import csv
+import os
 
-import csv
-with open('../data/data.csv', newline='') as csvfile:
+dirname = os.path.dirname(__file__)
+filename = os.path.join(dirname, '../data/data.csv')
+
+with open(filename , newline='') as csvfile:
     reader = csv.reader(csvfile)
     for row in reader:
         rows=[r for r in reader]
